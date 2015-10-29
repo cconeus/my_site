@@ -87,8 +87,6 @@
     $i = 0;
     foreach($exp_phrase as $letter) {
       $code = ord($letter);
-      if(preg_match('/[A-Za-z]/', $letter)) {
-
 
         if($code >= 97 && $code <= 122) {
           $new_ascii = $code + $shift_value;
@@ -102,7 +100,6 @@
             $recall = $new_ascii - 122;
             $new_ascii = 96 + $recall;
           }
-        }
 
         if($code >= 65 && $code <= 90) {
           $new_ascii = $code + $shift_value;
