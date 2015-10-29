@@ -23,7 +23,7 @@
     $form['shift_value'] = array(
       '#title' => 'Shift value',
       '#type' => 'textfield',
-      '#description' => t('Enter Shift Value here'),
+      '#description' => t('Enter Shift Value here, any number between 1 and 25.'),
       '#element_validate' => array('element_validate_integer_positive', 'element_validate_range'),
       '#required' => TRUE,
     );
@@ -31,7 +31,7 @@
     $form['shift_direction'] = array(
       '#title' => 'Shift direction',
       '#type' => 'textfield',
-      '#description' => t('Enter the direction you\'d like to shift in.'),
+      '#description' => t('Enter the direction you\'d like to shift in. (left or right)'),
       '#element_validate' => array('element_validate_direction'),
       '#required' => TRUE,
     );
