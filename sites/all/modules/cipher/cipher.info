@@ -1,0 +1,5 @@
+name = Cipherman
+description = Creates a Shift Cipher of users input and displays results.
+package = Epicodus Examples
+core = 7.x
+files[] = cipherman.module
